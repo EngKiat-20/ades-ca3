@@ -1,0 +1,25 @@
+{
+  "name": "ades-ca3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EngKiat-20/ades-ca3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EngKiat-20/ades-ca3/issues"
+  },
+  "homepage": "https://github.com/EngKiat-20/ades-ca3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nanoid": "^3.1.23"
+  }
+}
