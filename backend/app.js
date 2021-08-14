@@ -7,18 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-//const user = require('app/database/databaseConnect.js');
-
-if (process.env.NODE_ENV === 'production') {
-  // Exprees will serve up production assets
-  app.use(express.static('website/index.html'));
-
-  // Express serve up index.html file if it doesn't recognize route
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'website', 'index.html'));
-  });
-}
+const user = require('app/database/databaseConnect.js');
 
 const sessions = {};
 const playerName = {};
