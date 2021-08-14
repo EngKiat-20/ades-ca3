@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-const user = require('app/database/databaseConnect.js');
+//const user = require('app/database/databaseConnect.js');
 
 const sessions = {};
 const playerName = {};
@@ -38,17 +38,18 @@ app.post('/score', function (req, res, next) {
       final_score: playerFinalScore
   });
 
-  user.submitScore(playerUsername, playerFinalScore, function (err, result) {
+  /*user.submitScore(playerUsername, playerFinalScore, function (err, result) {
     if (!err) {
         console.log(result);
         res.send(result + ' record inserted');
     } else{
         res.send(err.statusCode);
 
-    }
+    }*/
   });
 })
 
+/*
 app.get('/topScore', function (req, res, next) {
   user.topScore(function (err, result) {
     if (!err) {
@@ -59,7 +60,7 @@ app.get('/topScore', function (req, res, next) {
 
     }
   });
-})
+})*/
 
 app.listen(process.env.port || 8000, function () {
   console.log('CORS-enabled web server listening on port '+process.env.port)
