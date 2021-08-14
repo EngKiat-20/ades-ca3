@@ -1,4 +1,4 @@
-const mysql = require("../backend/node_modules/mysql");
+const mysql = require("../node_modules/mysql");
 
 var dbconnect = {
     getConnection: function () {
