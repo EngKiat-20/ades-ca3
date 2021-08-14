@@ -61,6 +61,6 @@ app.get('/topScore', function (req, res, next) {
   });
 })
 
-app.listen(process.env.port, function () {
+app.listen(process.env.port || 8000, function () {
   console.log('CORS-enabled web server listening on port '+process.env.port)
 })
