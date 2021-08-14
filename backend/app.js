@@ -45,8 +45,8 @@ app.post('/score', function (req, res, next) {
     } else{
         res.send(err.statusCode);
 
-    }*/
-  });
+    }
+  });*/
 })
 
 /*
