@@ -1,4 +1,4 @@
-var db = require('./databaseConfig.js');
+var db = require('app/database/databaseConfig.js');
 
 var userDB = {
     submitScore: function (player_name, player_score, callback) {
