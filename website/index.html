@@ -65,7 +65,7 @@
         </div>
     </body>
     <script>
-        axios.get(`http://localhost:8000/topScore`)
+        axios.get(`http://0.0.0.0:8000/topScore`)
             .then((response) => {
                 const topName = response.data[0].username
                 const topScore = response.data[0].score
