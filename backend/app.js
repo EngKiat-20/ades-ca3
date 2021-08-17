@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 
-const user = require('app/database/databaseConnect.js');
+//const user = require('app/database/databaseConnect.js');
 
 const sessions = {};
 const playerName = {};
