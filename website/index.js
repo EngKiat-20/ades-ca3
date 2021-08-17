@@ -130,7 +130,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const previousAttempt = document.getElementById("previous-attempt");
 
 backendButton.addEventListener("click", function() {
-    fetch('http://0.0.0.0:8000/session', {method: 'POST'})
+    fetch('https://ades-hosting-practical.herokuapp.com/session', {method: 'POST'})
     .then(function (response) {
         return response.json();
     })
@@ -142,7 +142,7 @@ backendButton.addEventListener("click", function() {
 
 setNameButton.addEventListener("click", function() {
     const usernameData = {"player_username": nameInput.value};
-    fetch('http://0.0.0.0:8000/setName', 
+    fetch('https://ades-hosting-practical.herokuapp.com/setName', 
     {
         method: 'POST',
         headers: {
@@ -169,7 +169,7 @@ startButton.addEventListener("click", function() {
 submitScoreButton.addEventListener("click", function() {
     const playerData = {'player_name': nameText.innerHTML, 'final_score': correctAnswers};
     console.log(playerData)
-    fetch('http://0.0.0.0:8000/score', 
+    fetch('https://ades-hosting-practical.herokuapp.com/score', 
     {
         method: 'POST',
         headers: {
