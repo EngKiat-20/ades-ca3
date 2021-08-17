@@ -8,6 +8,7 @@ app.use(cors())
 app.use(express.json())
 
 //const user = require('app/database/databaseConnect.js');
+customPort = process.env.PORT || 8000;
 
 const sessions = {};
 const playerName = {};
@@ -62,6 +63,6 @@ app.get('/topScore', function (req, res, next) {
   });
 })*/
 
-app.listen(process.env.PORT || 8000, function () {
-  console.log('CORS-enabled web server listening on port '+process.env.port)
+app.listen(customPort, function () {
+  console.log('CORS-enabled web server listening on port '+ customPort)
 })
